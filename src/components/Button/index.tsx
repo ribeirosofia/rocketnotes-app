@@ -1,14 +1,15 @@
 import React from 'react';
 import  Container  from './styles'
 
-export const Button = ({ title, loading }) => {
+export const Button = ({ title, loading = false, ...rest }) => {
     return(
       <>
       <Container 
       type="button"
-      disabled={ loading ? 'Carregando...' : title }
+      disabled={ loading }
+      {...rest}
       >
-        {title} 
+        {loading ? 'Carregando...' : title} 
       </Container>
       </>
     )

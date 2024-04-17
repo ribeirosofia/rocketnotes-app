@@ -6,8 +6,9 @@ import { Button } from '../../components/Button'
   return(
     <>
     <Container>
-      <h1>Olaaa</h1>
-      <Button title="Entrar"/>
+      <h1>Teste</h1>
+      <Button title="Login" loading/>
+      <Button title="Cadastrar"/>
     </Container>
     </>
   )
