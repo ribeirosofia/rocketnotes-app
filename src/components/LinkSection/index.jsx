@@ -1,6 +1,6 @@
 import { Container } from './styles'
 
-export const Section = ({title, children}) => {
+export const LinkSection = ({title, children}) => {
     return (
         <Container>
            <h2>{title}</h2>
