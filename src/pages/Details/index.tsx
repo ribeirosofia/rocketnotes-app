@@ -1,14 +1,14 @@
 import React from 'react';
 import { Container } from './styles'
+import Header  from '../../components/Header'
 import { Button } from '../../components/Button'
 
  const Details: React.FC<{}> = () => {
   return(
     <>
     <Container>
-      <h1>Teste</h1>
-      <Button title="Login" loading/>
-      <Button title="Cadastrar"/>
+      <Header></Header>
+      <Button title="Voltar"/>
     </Container>
     </>
   )
