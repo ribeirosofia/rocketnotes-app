@@ -4,7 +4,7 @@ import { Container} from './styles'
 import Header  from '../../components/Header'
 import { Links } from '../../components/LinkSection/styles'
 import { LinkSection } from '../../components/LinkSection'
-
+import { Tag } from '../../components/Tag'
 
  const Details: React.FC<{}> = () => {
   return(
@@ -17,6 +17,10 @@ import { LinkSection } from '../../components/LinkSection'
           <a href="#">Link 1</a>
         </li>
         </Links>
+      </LinkSection>
+      <LinkSection title="Marcadores">
+       <Tag title="Express"/>
+       <Tag title="Node.js"/>
       </LinkSection>
       <Button title="Voltar"/>
     </Container>
