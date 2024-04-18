@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button } from '../../components/Button'
+import { ButtonText } from  '../../components/ButtonText'
 import { Container} from './styles'
 import Header  from '../../components/Header'
 import { Links } from '../../components/LinkSection/styles'
@@ -11,6 +12,7 @@ import { Tag } from '../../components/Tag'
     <>
     <Container>
       <Header />
+      <ButtonText title="Excluir nota"/>
       <LinkSection title="Links úteis">
         <Links>
         <li>
@@ -22,7 +24,7 @@ import { Tag } from '../../components/Tag'
        <Tag title="Express"/>
        <Tag title="Node.js"/>
       </LinkSection>
-      <Button title="Voltar"/>
+      <Button title="Voltar" loading />
     </Container>
     </>
   )
