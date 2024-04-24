@@ -5,7 +5,7 @@ import { Container, Content} from './styles'
 import Header  from '../../components/Header'
 import { Links } from '../../components/LinkSection/styles'
 import { LinkSection } from '../../components/LinkSection'
-import { Tag } from '../../components/Tag'
+import  Tag  from '../../components/Tag'
 
  const Details: React.FC<{}> = () => {
   return(
