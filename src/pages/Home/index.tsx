@@ -16,7 +16,7 @@ const Home: React.FC<{}> = () => {
             </Brand>
             <Header />
             <Menu>
-                <li><ButtonText title="Todos" isactive/></li>
+                <li><ButtonText title="Todos" isactive={true}/></li>
                 <li><ButtonText title="React"/></li>
                 <li><ButtonText title="Node.js"/></li>
             </Menu>
