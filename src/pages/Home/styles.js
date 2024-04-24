@@ -60,5 +60,7 @@ export const NewNote = styled.button`
 `;
 
 export const Search = styled.div`
-    grid-area: search;   
+    grid-area: search;
+    padding: 64px 64px 0;
+
 `;
