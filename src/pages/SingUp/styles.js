@@ -5,8 +5,13 @@ export const Container = styled.div`
     height: 100vh;
     display: flex;
     align-items: stretch;
-
 `;
+
+export const Background = styled.div`
+    flex: 1;
+    background: url(${backgroundImg}) no-repeat center center;
+    background-size: cover;
+    `
 
 export const Form = styled.form`
     padding: 0 136px;
@@ -30,13 +35,7 @@ export const Form = styled.form`
         color: ${({theme}) => theme.COLORS.GRAY_100};
     }
     > a {
-        margin-top: 124px;
+        margin-top: 100px;
         color: ${({theme}) => theme.COLORS.ORANGE};
     }
 `;
-
-export const Background = styled.div`
-    flex: 1;
-    background: url(${backgroundImg}) no-repeat center center;
-    background-size: cover;
-    `
