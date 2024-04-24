@@ -1,12 +1,14 @@
 import { Container } from './styles'
 
-export const Tag = ( { title }) => {
+const Tag = ( { title, ...rest }) => {
     return (
         <>
-        <Container>
+        <Container {...rest}>
             { title }
         </Container>
 
         </>
             )
 }
+
+export default Tag;
