@@ -34,6 +34,8 @@ export const Container = styled.div`
 
 export const Content = styled.div`
     grid-area: content;
+    padding: 0 64px;
+    overflow-y: auto;
 `;
 
 export const Menu = styled.ul`
@@ -62,5 +64,4 @@ export const NewNote = styled.button`
 export const Search = styled.div`
     grid-area: search;
     padding: 64px 64px 0;
-
 `;

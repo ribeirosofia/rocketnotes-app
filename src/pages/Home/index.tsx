@@ -4,6 +4,8 @@ import { ButtonText } from '../../components/ButtonText'
 import { FiPlus, FiSearch } from 'react-icons/fi';
 import  Header  from '../../components/Header'
 import { Input } from '../../components/Input';
+import { LinkSection } from '../../components/LinkSection';
+import { Note } from '../../components/Note';
 
 const Home: React.FC<{}> = () => {
     return(
@@ -22,7 +24,24 @@ const Home: React.FC<{}> = () => {
                 <Input placeholder="Pesquisar pelo título" icon={FiSearch}/>
             </Search>
             <Content>
-
+                <LinkSection title="Minhas notas">
+                    <Note data={{
+                        title: 'React',
+                        tags: [
+                            {id:'1', name: 'react'},
+                            {id:'2', name: 'frameworks'},
+                        ] 
+                        }}
+                    />
+                     <Note data={{
+                        title: 'NOde.js',
+                        tags: [
+                            {id:'1', name: 'node.js'},
+                            {id:'2', name: 'Javascript'},
+                        ] 
+                        }}
+                    />
+                </LinkSection>
             </Content>
             <NewNote>
                 <FiPlus />
