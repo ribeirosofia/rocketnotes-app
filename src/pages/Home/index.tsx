@@ -34,7 +34,7 @@ const Home: React.FC<{}> = () => {
                         }}
                     />
                      <Note data={{
-                        title: 'NOde.js',
+                        title: 'Node.js',
                         tags: [
                             {id:'1', name: 'node.js'},
                             {id:'2', name: 'Javascript'},
