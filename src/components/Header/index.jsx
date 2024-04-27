@@ -6,7 +6,7 @@ const Header = ({}) => {
     return (
         <>
             <Container>
-                <Profile>
+                <Profile to="/profile">
                     <img src="https://github.com/ribeirosofia.png" 
                     alt= "profile picture"
                     />

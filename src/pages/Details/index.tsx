@@ -7,7 +7,7 @@ import { Links } from '../../components/LinkSection/styles'
 import { LinkSection } from '../../components/LinkSection'
 import  Tag  from '../../components/Tag'
 
- const Details: React.FC<{}> = () => {
+export function Details () {
   return(
     <>
     <Container>
@@ -38,7 +38,7 @@ import  Tag  from '../../components/Tag'
                 <Tag title="Express"/>
                 <Tag title="Node.js"/>
                 </LinkSection>
-                <Button title="Voltar" loading />
+                <Button title="Voltar" loading={false} />
               </Content>  
             </main>      
             
@@ -46,5 +46,3 @@ import  Tag  from '../../components/Tag'
     </>
   )
 }
-
-export default Details;

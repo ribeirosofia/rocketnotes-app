@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 import { Button } from '../../components/Button'
 import { Container, Form } from './styles'
 import  Header  from '../../components/Header'
@@ -7,7 +8,7 @@ import { LinkSection } from '../../components/LinkSection'
 import  NoteItem  from '../../components/NoteItem/index.jsx';
 import { Textarea } from '../../components/Textarea/index.jsx';
 
-const New: React.FC<{}> = () => {
+export function New() {
     return(
         <>
             <Container>
@@ -16,7 +17,7 @@ const New: React.FC<{}> = () => {
                     <Form>
                         <header>
                             <h1>Criar nota</h1>
-                            <a href="/">Voltar</a>
+                            <Link to="/">Voltar</Link>
                         </header>
                         <Input placeholder="Título" type="text" icon={""}/>
                         <Textarea placeholder="Observações" value=""/>
@@ -45,5 +46,3 @@ const New: React.FC<{}> = () => {
         </>
     )
 }
-
-export default New;

@@ -7,7 +7,7 @@ import { Input } from '../../components/Input';
 import { LinkSection } from '../../components/LinkSection';
 import { Note } from '../../components/Note';
 
-const Home: React.FC<{}> = () => {
+export function Home() {
     return(
         <>
         <Container>
@@ -33,7 +33,7 @@ const Home: React.FC<{}> = () => {
                         ] 
                         }}
                     />
-                     <Note data={{
+                        <Note data={{
                         title: 'Node.js',
                         tags: [
                             {id:'1', name: 'node.js'},
@@ -43,7 +43,7 @@ const Home: React.FC<{}> = () => {
                     />
                 </LinkSection>
             </Content>
-            <NewNote>
+            <NewNote to="/new">
                 <FiPlus />
                 Criar nota
             </NewNote>
@@ -51,5 +51,3 @@ const Home: React.FC<{}> = () => {
         </>
     );
 }
-
-export default Home;
